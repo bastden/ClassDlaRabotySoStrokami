@@ -1,30 +1,43 @@
 package com.my;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Main {
 
-    public static void main(String[] args) {
+        String str = "Hello Vanya 3";
 
-        String str = new String("afafs");
-//        String str2 = "Hello World!";
 
-    public boolean isEmptyString(String str) {
-
-        if (str.isEmpty()) {
+    public boolean isEmptyString(String str){
+        if(str.isEmpty()) {
             return true;
 
         }
+    }
 
+    public boolean isThereFigureInSring(String str){
+        if(str.contains("\\d")){
+            return true;
+        }
+    }
+
+    public boolean isStringMachesPatern(String str){
+        if(str.matches("Hello Vanya 3")){
+            return true;
+        }
+    }
+    public void removeAllCharacters(String str){
+        removeAllCharacters(str);
+    }
+    public List<String> createListSring(String str){
+
+    }
+    public int howManyWordInString(String str){
+        String[] array = str.split(" ");
+        System.out.println(array.length);
     }
 
 }
-
-}
-
-
-
-
 
 
 //строками: в нем должно быть 10 методов.
